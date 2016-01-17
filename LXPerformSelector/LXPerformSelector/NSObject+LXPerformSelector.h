@@ -6,10 +6,13 @@
 //  Copyright © 2016年 从今以后. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
-@interface NSObject (LXPerformSelector)
+@protocol LXPerformSelector
+@optional
+- (_Nullable id)lx_performSelector:(_Nonnull SEL)aSelector, ...;
++ (_Nullable id)lx_performSelector:(_Nonnull SEL)aSelector, ...;
+@end
 
-- (id)lx_performSelector:(SEL)aSelector, ...;
-
+@interface NSObject (LXPerformSelector) <LXPerformSelector>
 @end
