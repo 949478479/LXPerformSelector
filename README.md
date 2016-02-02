@@ -1,6 +1,6 @@
 # LXPerformSelector
 
-思路来自 [Awhisper/vk_msgSend](https://github.com/Awhisper/vk_msgSend)，按自己的方式搞了一下。。。
+启发自 [Awhisper/vk_msgSend](https://github.com/Awhisper/vk_msgSend) 这个项目。
 
 - 支持基础类型，例如 `BOOL`、`int`、`double`、`CGFloat`、`NSInteger` 等类型。
 - 支持 `id` 类型，包括各种类型的对象和闭包。
